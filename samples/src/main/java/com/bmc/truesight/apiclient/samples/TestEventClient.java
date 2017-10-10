@@ -23,7 +23,7 @@ public class TestEventClient {
     public static void main (String args[])
     {
         //Creating the credential object which will be used while using the API.
-        TrueSightCredentials creds =new TrueSightCredentials("<email-ID>, "<api-token>");
+        TrueSightCredentials creds =new TrueSightCredentials("<email-ID>", "<api-token>");
         TrueSightAPIClient client = new TrueSightAPIClient(creds, 31000);
 
         List<Event> events = new ArrayList<>();

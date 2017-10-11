@@ -1,13 +1,13 @@
 # Sample Programs
 
-This project contains SDK samples which can be build separately.
+This project contains SDK samples which can be built separately.
 
 ### Steps to run samples
 
 	1. Build and install the parent SDK from the root directory.
 		$mvn clean install
         
-    2. Once build successfully, traverse to the samples folder and build the same.
+    2. Once build successful, traverse to the samples folder and build the same.
     	$mvn clean install
         
  You need to provide your `<email-ID>` and `<api-token>` before building the samples for successfuly authenticating the API when invoking the SDK methods available.
@@ -20,4 +20,4 @@ This project contains SDK samples which can be build separately.
  	* Creating Metrics (bulk)
  	* Creating Events (bulk)
 
-The values used are dummy values . Please change if required.  While creating Metrics, the call can fail if the metric already exist.
+The values used are dummy values, Please change if required.  While creating Metrics, the call can fail if the metric already exist.

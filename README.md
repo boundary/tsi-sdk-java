@@ -1,9 +1,14 @@
-# TrueSight Intelligence SDK for Java
+# Java SDK for TrueSight Intelligence
 
-Java client SDK for integrating to TrueSight Intelligence. Provides methods which can be invoked locally for creating Metrics, events and Measures. As of now only POST methods are supported for Measurements, Metrics & Events.
+Java client SDK for integrating to TrueSight Intelligence. The SDK supports methods which can be invoked locally for creating Metrics, events and Measures. As of now only POST methods are supported for Measurements, Metrics & Events.
+
+REST Endpoints which are supported
+* /v1/measurements
+* /v1/batch/metrics
+* /v1/events
 
 ## Prerequisites
-Java version - Java 1.8
+You need JDK 1.8 for building the project.
 
 ## Steps to install & use the SDK (Maven).
 1.  Clone the repository to your local directory
@@ -27,29 +32,28 @@ Java version - Java 1.8
 5.  Adding the required depedency to client application POM.
     a. Add the below maven repository details to the client pom.
     
-    `
+    ```
       <repositories>
         <repository>
             <id>local-repo</id>
             <url>file:///${project.basedir}/local-repo</url>
         </repository>
       </repositories>
-    `
+    ```
     
     b. Add the below dependency to the POM file.
     
-    `
+    ```
        <dependency>
             <groupId>com.bmc.truesight.saas.apiclient</groupId>
             <artifactId>truesight-saas-api-client</artifactId>
             <version>1.0</version>            
         </dependency>
-    `    
+    ```   
         
  ### Sample code
- Sample code snippets are provided in the repository/samples.
- Please provide the <email-id> & <api-token> while creating the credentials object.
- Refer to the javadoc created during build for more reference.
+ Sample code snippets are provided in the repository/samples. Samples is created as a seperate project with its own POM file. Follow the readme provided in samples to build the same.
+ 
+ Refer to the javadoc created during build for more reference on how to use the SDK.
  
  [TrueSight REST API reference](https://documentation.truesight.bmc.com/overview)
-

@@ -105,7 +105,7 @@ public TrueSightAPIClient(TrueSightCredentials creds)
 ```
  
  ### Sample code
- Sample code snippets are provided in the repository/samples. Samples is created as a seperate project with its own POM file. Follow the readme provided in samples to build the same.
+ Sample code snippets are provided in the repository/samples. Samples is a seperate project with its own POM file. Follow the readme provided in samples to build the same.
  
  Refer to the javadoc created during build for more reference on how to use the SDK.
  
